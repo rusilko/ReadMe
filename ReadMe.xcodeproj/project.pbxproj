@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		403256BD281AB6300077F9F6 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403256BC281AB6300077F9F6 /* Library.swift */; };
 		40D6D9972819D3A100233F38 /* ReadMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D6D9962819D3A100233F38 /* ReadMeApp.swift */; };
 		40D6D9992819D3A100233F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D6D9982819D3A100233F38 /* ContentView.swift */; };
 		40D6D99B2819D3A300233F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40D6D99A2819D3A300233F38 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		403256BC281AB6300077F9F6 /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		40D6D9932819D3A100233F38 /* ReadMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D6D9962819D3A100233F38 /* ReadMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeApp.swift; sourceTree = "<group>"; };
 		40D6D9982819D3A100233F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				40D6D9962819D3A100233F38 /* ReadMeApp.swift */,
+				403256BC281AB6300077F9F6 /* Library.swift */,
 				40D6D9A72819D9CD00233F38 /* Views */,
 				40D6D9A42819D82000233F38 /* Book.swift */,
 				40D6D99A2819D3A300233F38 /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			files = (
 				40D6D9992819D3A100233F38 /* ContentView.swift in Sources */,
 				40D6D9972819D3A100233F38 /* ReadMeApp.swift in Sources */,
+				403256BD281AB6300077F9F6 /* Library.swift in Sources */,
 				40D6D9A52819D82000233F38 /* Book.swift in Sources */,
 				40D6D9AB2819D9FF00233F38 /* BookView.swift in Sources */,
 			);

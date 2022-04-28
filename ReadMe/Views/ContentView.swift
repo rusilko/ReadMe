@@ -9,11 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    HStack {
-      Book.Image(title: Book().title)
-      Text("Hello, world!")
-        .font(.title2)
+    List(Library().sortedBooks, id: \.title) { book in
+      VStack {
+        BookRow(book: book)
+      }
     }
+  }
+}
+
+struct BookRow: View {
+  let book: Book
+  
+  var body: some View {
+    HStack {
+      Book.Image(title: book.title)
+      VStack(alignment: .leading) {
+        Text(book.title)
+          .font(.title2)
+        Text(book.author)
+          .font(.body)
+          .foregroundColor(.secondary)
+      }
+      .lineLimit(1)
+    }
+    .padding(.vertical)
   }
 }
 
