@@ -8,31 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+  @State var library: Library = Library()
+  
   var body: some View {
-    List(Library().sortedBooks, id: \.title) { book in
-      VStack {
-        BookRow(book: book)
+    NavigationView {
+      List(library.sortedBooks, id: \.self) { book in
+        BookRow(book: book, image: $library.images[book])
+          .listRowSeparator(.hidden)
       }
+      .navigationTitle("My Library")
     }
   }
 }
 
 struct BookRow: View {
   let book: Book
+  @Binding var image: Image?
   
   var body: some View {
-    HStack {
-      Book.Image(title: book.title)
-      VStack(alignment: .leading) {
-        Text(book.title)
-          .font(.title2)
-        Text(book.author)
-          .font(.body)
-          .foregroundColor(.secondary)
+    NavigationLink(destination: DetailsView(book: book, image: $image)) {
+      HStack {
+        Book.Image(image: image, title: book.title, size: 80, cornerRadius: 12.0)
+        TitleAndAuthorStack(book: book)
+          .lineLimit(1)
       }
-      .lineLimit(1)
+      .padding(.vertical)
     }
-    .padding(.vertical)
   }
 }
 
