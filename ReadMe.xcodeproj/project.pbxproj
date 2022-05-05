@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		403256BD281AB6300077F9F6 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403256BC281AB6300077F9F6 /* Library.swift */; };
+		40A6BACB2823EC9F0042CCDC /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A6BACA2823EC9F0042CCDC /* AddBookView.swift */; };
 		40A883D7281BF15D00792407 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A883D6281BF15D00792407 /* DetailsView.swift */; };
 		40A883D9281C10BA00792407 /* PHPickerViewController.View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A883D8281C10BA00792407 /* PHPickerViewController.View.swift */; };
 		40D6D9972819D3A100233F38 /* ReadMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D6D9962819D3A100233F38 /* ReadMeApp.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		403256BC281AB6300077F9F6 /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		40A6BACA2823EC9F0042CCDC /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		40A883D6281BF15D00792407 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		40A883D8281C10BA00792407 /* PHPickerViewController.View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPickerViewController.View.swift; sourceTree = "<group>"; };
 		40D6D9932819D3A100233F38 /* ReadMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 				40D6D9982819D3A100233F38 /* ContentView.swift */,
 				40D6D9AA2819D9FF00233F38 /* Book views.swift */,
 				40A883D6281BF15D00792407 /* DetailsView.swift */,
+				40A6BACA2823EC9F0042CCDC /* AddBookView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				40D6D9992819D3A100233F38 /* ContentView.swift in Sources */,
 				40D6D9972819D3A100233F38 /* ReadMeApp.swift in Sources */,
 				403256BD281AB6300077F9F6 /* Library.swift in Sources */,
+				40A6BACB2823EC9F0042CCDC /* AddBookView.swift in Sources */,
 				40D6D9A52819D82000233F38 /* Book.swift in Sources */,
 				40A883D9281C10BA00792407 /* PHPickerViewController.View.swift in Sources */,
 				40D6D9AB2819D9FF00233F38 /* Book views.swift in Sources */,

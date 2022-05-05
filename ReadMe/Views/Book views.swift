@@ -57,7 +57,41 @@ struct TitleAndAuthorStack: View {
         .font(.body)
         .foregroundColor(.secondary)
     }
+  }
+}
 
+extension View {
+  var previewInAllColorSchemes: some View {
+    ForEach(
+      ColorScheme.allCases, id: \.self,
+      content: preferredColorScheme
+    )
+  }
+  
+  var previewInAllColorSchemes2: some View {
+    ForEach(
+      ColorScheme.allCases, id: \.self,
+      content: { scheme in
+        self.preferredColorScheme(scheme)
+      }
+    )
+  }
+  
+  var previewInAllColorSchemes3: some View {
+    ForEach(
+      ColorScheme.allCases, id: \.self,
+      content: { self.preferredColorScheme($0) }
+    )
+  }
+  
+  var previewInAllColorSchemes4: some View {
+    ForEach(ColorScheme.allCases, id: \.self) { preferredColorScheme($0)
+    }
+  }
+  
+  var previewInAllColorSchemes5: some View {
+    ForEach(ColorScheme.allCases, id: \.self) { scheme in  preferredColorScheme(scheme)
+    }
   }
 }
 
@@ -67,6 +101,6 @@ struct Book_Previews: PreviewProvider {
       Book.Image(title: Book().title)
       Book.Image(title: "")
       Book.Image(title: "📕")
-    }
+    }.previewInAllColorSchemes
   }
 }
